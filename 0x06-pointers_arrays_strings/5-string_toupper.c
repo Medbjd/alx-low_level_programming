@@ -3,7 +3,7 @@
 /**
  * string_toupper - changes all lowercase letters of a string
  * to uppercase
- * @s: input string.
+ * @n: input string.
  * Return: the pointer to dest.
  */
 char *string_toupper(char *n)
@@ -12,7 +12,7 @@ char *string_toupper(char *n)
 
 	while (n[i] != '\0')
 	{
-		if (n[i] >= 'a' && n[i] <='z')
+		if (n[i] >= 'a' && n[i] <= 'z')
 			n[i] = n[i] - 32;
 		i++;
 	}
